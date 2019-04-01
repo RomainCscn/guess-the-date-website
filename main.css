@@ -11,6 +11,24 @@ h1, h2, h3 {
   line-height:1.2;
 }
 
+.badges {
+  padding: 24px;
+}
+
+.badges > a {
+  text-decoration: none;
+}
+
+.badge {
+  margin: 12px;
+  height: 64px;
+  transition: transform 0.2s;
+}
+
+.badge:hover {
+  transform: translateY(-4px);
+}
+
 /** NAVBAR **/
 
 .navbar {
@@ -51,15 +69,6 @@ h1, h2, h3 {
   height: 600px;
 }
 
-.badges {
-  padding: 24px;
-}
-
-.badge {
-  padding: 12px;
-  height: 64px;
-}
-
 /** FEATURES **/
 
 .features {
@@ -81,6 +90,18 @@ h1, h2, h3 {
 
 .feature-sub-headline {
   font-size: 18px;
+}
+
+/** DOWNLOAD **/
+
+.download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download > h2 {
+  text-align: center;
 }
 
 /** FOOTER **/
