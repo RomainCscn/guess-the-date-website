@@ -17,13 +17,28 @@ a {
 }
 
 .badge {
-  margin-right: 24px;
   height: 64px;
   transition: transform 0.2s;
 }
 
+.badge.apple {
+  margin-right: 24px;
+}
+
 .badge:hover {
   transform: translateY(-4px);
+}
+
+@media screen and (max-width: 500px) {
+  .badges {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .badge.apple {
+    margin-right: 0;
+  }
 }
 
 /** NAVBAR **/
@@ -57,9 +72,19 @@ a {
   border-radius: 32px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .navbar-content {
+    padding: 12px 36px;
+  }
+}
 
+@media screen and (max-width: 500px) {
+  .navbar-content {
+    justify-content: center;
+  }
+
+  .nav-item {
+    display: none;
   }
 }
 
@@ -74,16 +99,53 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   max-width: 1000px;
   margin: 0 auto;
 }
 
 h1 {
+  margin-top: 0;
   font-size: 64px;
 }
 
 .iphone {
   height: 600px;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero-content {
+    padding: 12px 36px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    padding-top: 24px;
+  }
+
+  .hero-content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .iphone {
+    margin-bottom: 72px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  
 }
 
 /** FEATURES **/
@@ -142,10 +204,13 @@ h2 {
 /** FOOTER **/
 
 footer {
-  padding: 72px;
+  padding: 72px 6px;
   background-color: #EBEEF5;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer-item {
-  margin: 0 12px;
+  margin: 12px;
 }
