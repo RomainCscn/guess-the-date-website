@@ -11,12 +11,12 @@ h1, h2, h3 {
   line-height:1.2;
 }
 
-.badges {
-  padding: 24px;
+a {
+  text-decoration: none;
 }
 
-.badges > a {
-  text-decoration: none;
+.badges {
+  padding: 24px;
 }
 
 .badge {
@@ -41,7 +41,7 @@ h1, h2, h3 {
   justify-content: space-between;
   align-items: center;
   padding: 12px;
-  width: 1000px;
+  max-width: 1000px;
 }
 
 .logo {
@@ -58,6 +58,12 @@ h1, h2, h3 {
   color: white;
   padding: 12px 16px;
   border-radius: 32px;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar-content {
+
+  }
 }
 
 /** HERO **/
@@ -79,7 +85,7 @@ h1, h2, h3 {
 
 /** FEATURES **/
 
-.features {
+#features {
   padding: 48px 0 0;
   margin: -1px auto;
   color: white;
@@ -91,7 +97,7 @@ h1, h2, h3 {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-} 
+}
 
 .feature-text {
   font-size: 24px;
@@ -110,11 +116,12 @@ h1, h2, h3 {
 
 /** DOWNLOAD **/
 
-.download {
+#download {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 128px 0;
+  padding: 164px 0 72px;
+  background-color: #EBEEF5;
 }
 
 .download > h2 {
@@ -125,6 +132,10 @@ h1, h2, h3 {
 /** FOOTER **/
 
 footer {
-  padding: 48px;
+  padding: 72px;
   background-color: #EBEEF5;
+}
+
+.footer-item {
+  margin: 0 12px;
 }
