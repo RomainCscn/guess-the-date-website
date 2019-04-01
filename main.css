@@ -314,3 +314,16 @@ footer {
 .footer-link:hover {
   text-decoration: underline;
 }
+
+/** PRIVACY POLICY **/
+
+.privacy-policy {
+  background-color: #EBEEF5;
+}
+
+.privacy-policy > div {
+  padding: 72px 12px;
+  margin: 0 auto;
+  max-width: 800px;
+  min-height: calc(100vh - 80px - 172px - 144px);
+}
