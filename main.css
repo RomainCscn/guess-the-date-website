@@ -199,10 +199,12 @@ h1 {
   font-size: 32px;
   font-weight: 700;
   line-height: 1.2;
+  margin-bottom: 12px;
 }
 
 .feature-sub-headline {
   font-size: 18px;
+  line-height: 1.2;
   color: #dedff7;
 }
 
