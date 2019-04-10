@@ -142,7 +142,7 @@ h1 {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .hero {
     padding-top: 24px;
   }
@@ -275,6 +275,10 @@ h1 {
 
   .feature-headline {
     font-size: 24px;
+  }
+
+  .features-break.grey {
+    margin: -78px 0 64px;
   }
 }
 
