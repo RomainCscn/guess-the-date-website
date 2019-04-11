@@ -20,6 +20,7 @@ a {
 .badge {
   height: 64px;
   transition: transform 0.2s;
+  margin-bottom: 12px;
 }
 
 .badge.apple {
@@ -30,7 +31,15 @@ a {
   transform: translateY(-4px);
 }
 
-@media screen and (max-width: 506px) {
+@media screen and (max-width: 768px) {
+  .badges {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 525px) {
   .badges {
     display: flex;
     flex-direction: column;
